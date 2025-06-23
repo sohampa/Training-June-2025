@@ -10,7 +10,7 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
-
+// Injected product repo
     @Autowired
     private ProductRepository productRepository;
 
