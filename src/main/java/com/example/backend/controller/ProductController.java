@@ -16,11 +16,12 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    //Post mapping  method is added to save the products details
     @PostMapping
     public Product save(@RequestBody Product product) {
         return productService.save(product);
     }
-
+    //Put mapping  method is added to update the products details
     @PutMapping("/{id}")
     public Product update(@PathVariable Long id, @RequestBody Product product) {
         return productService.updateById(id, product);
